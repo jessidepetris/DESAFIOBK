@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+</head>
+<body>
+
+    <form id="ficha" action="./productos/add" enctype="application/x-www-form-urlencoded" method="post">
+        <div>
+          <label for="nombre">Nombre del Producto:</label>
+          <input type="text" value="" id="nombre" name="nombre">
+        </div>
+        <div>
+          <label for="precio">Precio del Producto:</label>
+          <input type="number" value="" id="precio" name="precio">
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="myFile">Subir Foto del producto</label>
+        <input type="file" name="myFile">
+    <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
